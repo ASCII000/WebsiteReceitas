@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/static/css/mainStyle.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div id="page_title">
+                <h1>BOAS RECEITAS !</h1>
+            </div>
+            <div id="login_bottom">
+                <a href="login.php">LOGIN</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1>AQUI VOCÊ ENCONTRA AS MELHORES RECEITAS!</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio minus nobis laudantium ducimus unde fuga voluptatibus amet quam, sunt accusantium debitis adipisci dignissimos laboriosam quasi illo similique quae, dicta porro.</p>
+        
+        <h2>RECOMENDAÇÕES</h2>
+        
+        
+        <div id="posts">
+
+            {% for postagem in postagens %}
+
+            <article class="post">
+                <img class="thumb" src="{{postagem['imagem']}}" alt="Thumbmail_reference">
+                <h3>{{ postagem['titulo'] | upper }}</h3>
+                <p>{{ postagem['conteudo'] }}</p>
+                <a href="#">VER RECEITA COMPLETA</a>
+            </article>
+
+            {% endfor %}
+        </div>
+    
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,83 @@
+body {
+    background-color: bisque;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0 auto;
+}
+
+#login_bottom a{
+    background-color: rgb(247, 153, 30);
+    border: 6px solid rgb(247, 153, 30);
+    border-radius: 100vh;
+    color: white;
+    text-decoration: none;
+    font-style: bold;
+    padding: 0 6px 0 6px;
+}
+
+nav {
+    position: fixed top;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    font-weight: 22px;
+
+    color: rgb(247, 153, 30);
+    background-color: white;
+
+    padding: 0 20px;
+}
+
+main {
+    display: flex;
+
+    flex-direction: column;
+    margin: 20px 12px;
+    padding: 0 10px;
+    
+    color: rgb(128, 99, 65);
+    background-color: white;
+    text-align: center;
+    justify-content: center;
+}
+
+#posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    padding: 5vh 0 5vh 0;
+    background-color: #f0f0f0;
+    overflow: auto;
+}
+.post {
+    position: relative;
+    flex-basis: 400px;
+    display: flex;
+    flex-direction: column;
+    background-color: greenyellow;
+    height: 500px;
+    min-width: 400px;
+    margin: 0 12px 12px 0;
+    overflow: hidden;
+}
+
+.post p {
+    padding-left: 12px;
+    width: 90%;
+    overflow: hidden;
+    display: -webkit-box;
+    text-align: left;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+}
+
+.post a {
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.363);
+    padding-bottom: 20px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
