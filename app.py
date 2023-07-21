@@ -29,7 +29,8 @@ class App:
         @self.app.route('/static/img/<path:filename>')
         def img(filename):
             return send_from_directory('static/img', filename)
+
     
 if __name__ == '__main__':
-    app = App()
-    app.app.run()
+    server = App()
+    server.app.run()
